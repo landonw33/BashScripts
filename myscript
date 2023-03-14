@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+myvar="Hello!"
+echo "The value of the myvar variable is: $myvar"
+myvar="Bonjour!"
+echo "The value of the myvar variable is: $myvar"
+
+# The -r makes "myname" READ ONLY
+declare -r myname="Landon"
+echo "The value of the myname variable is: $myname"
+myname="Josh"
+echo "The value of the myname variable is: $myname"
+
+# The declare -l turns everything into all lowercase
+declare -l lowerstring="This is some TEXT!"
+echo "The value of the lowerstring variable is: $lowerstring"
+lowerstring="Let's CHANGE the VALUE!"
+echo "The value of the lowerstring variable is: $lowerstring"
+
+# The declare -u turns everything into all uppercase
+declare -u upperstring="This is some TEXT!"
+echo "The value of the upperstring variable is: $upperstring"
+upperstring="Let's CHANGE the VALUE!"
+echo "The value of the upperstring variable is: $upperstring"
+
+# To make a script executable in te terminal do "chmod +x myscript"
+# To run the script "./myscript"
