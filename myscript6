@@ -11,7 +11,7 @@ done
 
 echo -e "\nUntil Loop"
 declare -i b=0
-until (( b > 5 )); do
+until (( b > b )); do
     echo "b:$b"
     (( b++ ))
 done
