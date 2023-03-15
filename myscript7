@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+for i in 1 2 3
+do
+    echo $i
+done
+
+echo -e
+
+for i in 1 2 3; do echo $i; done
+
+for i in {1..100}
+do
+    echo $i
+done
+
+echo -e
+
+for (( i=1; i<=100; i++ ))
+do
+    echo $i
+done
