@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+declare -i a=7
+declare -i b=10
+
+# Showing two different ways
+if [[ $a -gt $b ]]; then
+    echo "$a is greater than $b!"
+    elif (( $a > $b )); then
+    echo "$a is less than $b!"
+else
+    echo "$a is not greater than $b!"
+fi
